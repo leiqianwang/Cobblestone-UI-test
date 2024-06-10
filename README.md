@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 UI Developer / Front End Developer Test
 Test Instructions:
 • Duration: Approximately 30 minutes
@@ -96,3 +97,8 @@ the array of fruits.
 - Test the function with the provided example usage to ensure it produces the correct output.
 Expected Output:
 ['apple', 'banana', 'orange']
+=======
+# Cobblestone-UI-test
+
+
+>>>>>>> origin/main
