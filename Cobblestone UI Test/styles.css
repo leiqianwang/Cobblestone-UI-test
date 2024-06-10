@@ -1,0 +1,226 @@
+/* This style sheet is in fullfillment of UI task 1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+body.dark-mode {
+    background-color: #3d3838;
+    color: #ffffff;
+} 
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+header.dark-mode {
+    background: #000;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 5px 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section */
+section {
+    margin: 20px 0;
+    width: 100%;
+    /* max-width: 800px; */
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.dark-mode {
+    background: #333;
+    color: #3c4dcb;
+}
+
+section h1 {
+    font-size: 2em; /* Increase font size */
+    color: #0056b3; /* Change color */
+    margin-bottom: 10px;
+}
+
+.section .span12 {
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    background: #F4F4F4;
+    padding: 60px 0;
+}
+
+/* Banner inside .span12 */
+.banner {
+    background: #0056b3;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.banner p {
+    margin: 0;
+}
+
+/* stylling of container <div> .row-fluid */
+
+.row-fluid p {
+    font-size: 16px; /* Regular text size */
+    color: #000; /* Regular black text */
+}
+
+.row-fluid.dark-mode p {
+    color:#007bff;
+}
+
+.row-fluid ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left; /* Align text in the list to the left */
+}
+
+.row-fluid ul li {
+    margin-bottom: 5px;
+}
+
+/* Center the button container `Read More` */
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Button styles. e.g. The transition effect makes the animated change of the specified propers (in this case, `background-color`)
+over a given duration, making the change appear smooth. 0.3s is 300 milliseconds within `ease` timing function */
+button#toggleButton, button#modeToggleButton {
+    font-size: 1.3em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* The hover effect changes the background color of the button when the user hovers over it */
+button#toggleButton:hover, button#modeToggleButton {
+    background-color: #0055b3;
+}
+
+/* Dark mode button id, the button is in the nav */ 
+button#modeToggleButton {
+      margin-top: 0;           
+}
+
+
+/* Form */
+form {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+form.dark-mode {
+    background: #555;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* iframe, img {
+    /* max-width: 100%; */
+    /* height: auto;
+} */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        margin-left: 20px;
+        margin: 0 10px;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    form {
+        width: 50%;         /* Narrow from to fit in larger screens  */
+        margin: 20px auto;
+    }
+}
